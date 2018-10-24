@@ -3,7 +3,7 @@ FROM arm32v6/alpine
 ENV SQUID_CACHE_DIR=/var/spool/squid \
     SQUID_LOG_DIR=/var/log/squid 
 
-RUN apk add --update squid bash \
+RUN apk add --no-cache --update squid bash \
  && mv /etc/squid/squid.conf /etc/squid/squid.conf.dist
 
 COPY squid.conf /etc/squid/squid.conf

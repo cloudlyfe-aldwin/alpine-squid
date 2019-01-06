@@ -1,4 +1,4 @@
-FROM arm32v6/alpine
+FROM alpine
 
 ENV SQUID_CACHE_DIR=/var/spool/squid \
     SQUID_LOG_DIR=/var/log/squid 

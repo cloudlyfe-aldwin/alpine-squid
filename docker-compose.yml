@@ -2,8 +2,8 @@ version: '3'
 services:
   squid:
     build: ./
-#    ports:
-#      - "3128:3128"
+    container_name: ${CONTAINER_NAME:-squid}
+    image: alpine-squid
     restart: unless-stopped
 
 networks:
